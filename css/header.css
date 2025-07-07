@@ -1,0 +1,48 @@
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 90px;
+}
+
+.header-bar__menu {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header-bar strong {
+  margin-left: 80px;
+  font-size: 45px;
+}
+
+.header-bar__right {
+  display: flex;
+  gap: 10px;
+}
+
+.header-bar__help {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header-bar__chart {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header-bar__setting {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.board-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  font-weight: bold;
+}
