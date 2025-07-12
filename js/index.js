@@ -23,8 +23,8 @@ function appStart() {
 
   const nextLine = () => {
     if (attempts === 6) {
-      return;
       gameover();
+      return;
     }
     attempts += 1;
     index = 0;
@@ -76,14 +76,10 @@ function appStart() {
     );
 
     if (event.key === "Backspace") handleBackspace();
-    else if (index === 5) {
-      if (event.key === "Enter") {
+    else if (event.key === "Enter") {
+      if (index === 5) {
         handleEnterKey();
-      } else {
-        return;
       }
-    } else if (event.key === "Enter") {
-      handleEnterKey();
     } else if (65 <= keyCode && keyCode <= 90) {
       thisBlock.innerText = key;
       index++;
